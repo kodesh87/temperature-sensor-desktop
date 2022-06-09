@@ -1,0 +1,103 @@
+body  {
+	font-size:12px;
+	font-family:Arial, Helvetica, sans-serif;
+	background: #ffffff url(bodyBackground.jpg) left top repeat;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+h3 {
+	background: url(titleBackground.jpg) left top repeat-x;
+	height:31px;
+	color:#FFFFFF;
+	padding:7px 5px;
+	margin:8px 0;
+}
+.pic {
+	float:right;
+	margin:0 0 10px 10px;
+}
+.stretcher p {
+	margin:5px;
+}
+a {
+	color:#255da4;
+	text-decoration:underline;
+}
+a:hover {
+	color:#255da4;
+	text-decoration:none;
+}
+#container { 
+	width: 800px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */	
+	text-align: left; /* this overrides the text-align: center on the body element. */
+} 
+
+#topcontainer {
+	width: 800px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+	background: transparent;
+	margin: 0 auto;
+	margin-top: 20px;
+	text-align: center; /* this overrides the text-align: center on the body element. */
+}
+
+#topcontainer span#maintitle {
+	font-size:40px;
+	font-family:Arial, Helvetica, sans-serif;
+	padding: 0;
+	color: #fff;
+	background: transparent;
+}
+
+#bottomcontainer {
+
+}
+
+#bottomcontainer span#updatestatus {
+	font-size:20px;
+	font-family:Arial, Helvetica, sans-serif;
+	padding: 0;
+	background: transparent;
+}
+
+#header { 
+	background: #DDDDDD url(titleBackground.jpg);
+	width:800px;
+	height:428px; 
+	margin-top:80px;
+	border:7px solid white;
+	position:relative;
+} 
+#header h1 {
+	color:#fff;
+	margin: 0 20px; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+}
+#header span {
+	margin:0 20px;
+	color:#fff;
+}
+
+#header span#suhu{
+	font-size:350px;
+	left:80px;
+	position:absolute;
+	top:10px;
+}
+
+#header span#suhu span#derajat{
+	position:absolute;
+	font-size:120px;
+	top:30px;
+	right:-70px;
+}
+
+#header span#suhu span#celcius{
+	font-size:300px;
+	right:-260px;
+	position:absolute;
+	top:10px;
+}
